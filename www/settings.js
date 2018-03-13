@@ -12,4 +12,4 @@ NativeSettings2.prototype.openSetting = function(settingName, onsucess, onfail) 
 };
 
 var NativeSettings2 = new NativeSettings2();
-module.exports = NativeSettings;
+module.exports = NativeSettings2;
