@@ -6,7 +6,7 @@
  * Copyright (c) 2011, IBM Corporation
  */
 
-package com.phonegap.plugins.nativesettings;
+package com.phonegap.plugins.imp;
 
 import org.json.JSONArray;
 
@@ -22,7 +22,7 @@ import org.apache.cordova.CordovaPlugin;
 import org.apache.cordova.PluginResult;
 
 
-public class NativeSettings extends CordovaPlugin {
+public class imp extends CordovaPlugin {
 
     @Override
     public boolean execute(String action, JSONArray args, CallbackContext callbackContext) {
