@@ -34,7 +34,7 @@ public class NativeSettings2 extends CordovaPlugin {
         //http://developer.android.com/reference/android/provider/Settings.html
 
         if (action.equals("picker")) {
-           InputMethodManager localInputMethodManager = (InputMethodManager) getSystemService(INPUT_METHOD_SERVICE);
+           InputMethodManager localInputMethodManager = (InputMethodManager) cordova.getActivity().getSystemService(INPUT_METHOD_SERVICE);
              if (localInputMethodManager != null) {
                localInputMethodManager.showInputMethodPicker();
               }        
