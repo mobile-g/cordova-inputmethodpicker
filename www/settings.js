@@ -4,7 +4,7 @@ function NativeSettings2() {
 }
 
 NativeSettings2.prototype.open = function(onsucess, onfail) {
-	exec(onsucess, onfail, "NativeSettings", "open", []);
+	exec(onsucess, onfail, "NativeSettings2", "open", []);
 };
 
 NativeSettings2.prototype.openSetting = function(settingName, onsucess, onfail) {
