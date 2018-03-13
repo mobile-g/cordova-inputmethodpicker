@@ -1,15 +1,15 @@
 var exec = require("cordova/exec");
 
-function NativeSettings() {
+function NativeSettings2() {
 }
 
-NativeSettings.prototype.open = function(onsucess, onfail) {
+NativeSettings2.prototype.open = function(onsucess, onfail) {
 	exec(onsucess, onfail, "NativeSettings", "open", []);
 };
 
-NativeSettings.prototype.openSetting = function(settingName, onsucess, onfail) {
-	exec(onsucess, onfail, "NativeSettings", settingName, []);
+NativeSettings2.prototype.openSetting = function(settingName, onsucess, onfail) {
+	exec(onsucess, onfail, "NativeSettings2", settingName, []);
 };
 
-var NativeSettings = new NativeSettings();
+var NativeSettings2 = new NativeSettings2();
 module.exports = NativeSettings;
