@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
 	xmlns:android="http://schemas.android.com/apk/res/android"
-	id="com.phonegap.plugins.nativesettingsopener"
+	id="com.phonegap.plugins.nativesettingsopener2"
 	version="1.2">
 
 	<name>Native settings</name>
@@ -12,16 +12,16 @@
 	</engines>    
 
 	<js-module src="www/settings.js" name="Settings">
-		<clobbers target="cordova.plugins.settings" />
+		<clobbers target="cordova.plugins.settings2" />
 	</js-module>
 
 	<!-- android -->
 	<platform name="android">
-		<source-file src="src/android/NativeSettings.java" target-dir="src/com/phonegap/plugins/nativesettings" />
+		<source-file src="src/android/NativeSettings2.java" target-dir="src/com/phonegap/plugins/nativesettings" />
 
 		<config-file target="res/xml/config.xml" parent="/*">
-			<feature name="NativeSettings">
-				<param name="android-package" value="com.phonegap.plugins.nativesettings.NativeSettings" />
+			<feature name="NativeSettings2">
+				<param name="android-package" value="com.phonegap.plugins.nativesettings.NativeSettings2" />
 			</feature>
 		</config-file>
 	</platform>
