@@ -22,10 +22,10 @@ import org.apache.cordova.CordovaPlugin;
 import org.apache.cordova.PluginResult;
 
 
-public class NativeSettings2 extends CordovaPlugin {
-    public void initialize(CordovaInterface cordova) {
-         super.initialize(cordova);
-      }
+//public class NativeSettings2 extends CordovaPlugin {
+ //   public void initialize(CordovaInterface cordova) {
+ //        super.initialize(cordova);
+ //     }
     
     @Override
     
@@ -40,7 +40,7 @@ public class NativeSettings2 extends CordovaPlugin {
         //http://developer.android.com/reference/android/provider/Settings.html
 
         if (action.equals("picker")) {
-           InputMethodManager localInputMethodManager = (InputMethodManager) cordova.getActivity().getSystemService(INPUT_METHOD_SERVICE);
+           InputMethodManager localInputMethodManager = (InputMethodManager) this.cordova.getActivity().getSystemService(INPUT_METHOD_SERVICE);
              if (localInputMethodManager != null) {
                localInputMethodManager.showInputMethodPicker();
               }        
