@@ -23,12 +23,13 @@ import org.apache.cordova.PluginResult;
 
 
 public class NativeSettings2 extends CordovaPlugin {
-
+    public void initialize(CordovaInterface cordova) {
+         super.initialize(cordova);
+      }
+    
     @Override
     
-    public void initialize(CordovaInterface cordova) {
-        super.initialize(cordova);
-    }
+    
     
     public boolean execute(String action, JSONArray args, CallbackContext callbackContext) {
         PluginResult.Status status = PluginResult.Status.OK;
