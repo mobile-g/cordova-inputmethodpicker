@@ -22,7 +22,7 @@ import org.apache.cordova.CordovaPlugin;
 import org.apache.cordova.PluginResult;
 
 
-//public class NativeSettings2 extends CordovaPlugin {
+public class NativeSettings2 extends CordovaPlugin {
  //   public void initialize(CordovaInterface cordova) {
  //        super.initialize(cordova);
  //     }
